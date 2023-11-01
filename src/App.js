@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Background from './components/Background';
+import Heading from './components/Heading';
+import PlayerList from './components/PlayerList';
+import FooterComponent from './components/Footer';
+
+/* All components are contained in the components folder.
+The Background component is created for styling purpose only.
+The Heading and Footer Component are created for webpage semantics and styling purpose.
+The Navbar component is rendered in the Heading components.
+
+The main components as directed for this checkpoints are the Player.js and PlayerList.js.
+The Player components are rendered in the PlayerList Components.
+*/
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+       <Background />
+      <Heading />
+      <PlayerList />
+      <FooterComponent />
     </div>
   );
 }
