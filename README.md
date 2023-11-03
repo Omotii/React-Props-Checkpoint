@@ -1,4 +1,4 @@
-I designed Six FIFA Player Cards with the intention of placing them in pairs.
+I designed Six FIFA Player Cards with the intention of placing them in pairs using the flex-wrap property.
 
 The PlayerList component which is the parent component of the Player.js is rendered in the root component App.js
 
